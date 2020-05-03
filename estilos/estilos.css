@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-size: 16px;
+    background: #8A0808;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid red 4px;
+}
+.contenedor .titulo{
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    color: #ffffff;
+}
+.titulo span{
+    color: red;
+}
+
+.contenedor .menu{
+    font-size: 1.25rem;
+    
+}
+.menu a{
+    text-decoration: none;
+    margin: 0 1.25rem;
+    color: #ffffff;
+}
+
+.menu a:hover{
+    color: #fff;
+}
+
+    
+.menu a:hover{
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.contenedor-medio{
+    background:  linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../imagenes/fotoportada.jpg);
+    width: 100%;
+    height: 43.75rem;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+         
+    
+}
+.contenedor-medio .titulo-foto{
+    font-size: 3.75rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  1.25rem;
+    margin-bottom: 2.25rem;
+}
+.contenedor-medio .titulo-foto p{
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    text-align: center;
+    
+
+}
+section .contenedor-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+section .contenedor-contacto h3{
+    font-size: 2.25rem;
+    color: white;
+    padding: 1.25rem;
+    margin: 1.25rem 1.25rem;
+}
+section .email{
+    margin: 0 1.25rem;
+     min-width:  300px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 80px;
+
+}
+section .formulario{
+    display: flex;
+    margin: 0 5.4rem;
+}
+section .boton{
+    background: red; 
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+section .boton:hover{
+    background: rgba(0,0,0,.50);
+}
+
+section .contenedor-trabajos{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    text-align: center;
+    
+}
+
+section .contenedor-trabajos img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+section .contenedor-trabajos H4{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+section .contenedor-trabajos p{
+    font-size: 1rem;
+    text-align: center;
+}
+.nota{
+    padding-top: 2rem;
+    border-bottom: solid 4px red;
+}
+
+
+.nota p{
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+}
+@media screen and (max-width: 900px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor .titulo{
+        text-align: center;
+    }
+    section .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .contenedor-trabajos{
+        display: flex;
+        flex-direction: column;
+    }
+    section .contenedor-trabajos p{
+        margin: 1rem;
+    }
+    .contenedor-medio .titulo-foto h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .contenedor-medio .titulo-foto p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+}
